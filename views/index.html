@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/responsive.css"> <!--レスポンシブデザイン用-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <title>o-bridge!</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class=""container>
+        <div class="header-left"></div>
+        <div class="header-right">
+          <button id="make-projects" class="button more">more</button>
+          <div id="project-list"></div>
+        </div>
+      </div>
+    </div>
+      <div class="top-wrapper">
+        <div class="container">
+            <h1>Prototype<span>.</span><br>Amateur Photfolio</h1>
+            <p>This is a photfolio made by amateurs.<br>It took about a month,,,</p>
+        </div>
+      </div>
+    <div class="intro-wrapper">
+      <div class="container">
+        <div class="Profile-image">
+          <h2 class="section-title">Profile</h2>
+          <img src="../public/images/face.jpg" class="face">
+        </div>
+        <div class="Profile-contents">
+          <table>
+            <tr>
+              <th>Name</th>
+              <td>大橋友紀</td>
+            </tr>
+            <tr>
+              <th>Native Place</th>
+              <td>神奈川県</td>
+            </tr>
+            <tr>
+              <th>Birthday</th>
+              <td>1995.2.26</td>
+            </tr>
+            <tr>
+              <th>Blood</th>
+              <td>B型</td>
+            </tr>
+            <tr>
+              <th>Hobby</th>
+              <td>料理、キャンプ、ゲーム、バスケットボール</td>
+            </tr>
+            <tr>
+              <th>Speciality</th>
+              <td>普及指導員資格、土壌医検定２級</td>
+            </tr>
+          </table>          
+        </div>
+      </div>
+    </div>
+    <div class="history-wrapper">
+      <div class="container flex">
+        <div class="box skillset"></div>
+        <div class="box">
+          <div class="slider">
+            <div class="slider-container">
+            <div class="slide"><img src="../public/images/fujiyama.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="../public/images/miharayama.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="../public/images/motomachi_1.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="../public/images/motomachi_2.jpg" alt="Slide 4"></div>
+            <div class="slide"><img src="../public/images/kouzushima.jpg" alt="Slide 5"></div>
+          </div>
+          <div class="controls">
+            <button class="button sld" id="prev">Prev</button>
+            <button class="button sld" id="next">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="btn-wrapper">
+          <a href="#" class="btn instagram"><span class="fa-brands fa-instagram"></span>instagramはこちら</a>
+          <a href="#" class="btn X">Xはこちら</a>
+        </div>
+        <div class="contact-form">
+          <h3 class="section-title">CONTACT</h3>
+          <form id="contactForm">
+            <label for="name">名前<span>（必須）</span></label>
+            <p></p>
+            <input type="text" id="name" required />
+            <span class="error" id="nameError"></span> 
+            <p></p>      
+            <label for="email">メールアドレス<span>（必須）</span></label>
+            <p></p>
+            <input type="email" id="email" required />
+            <span class="error" id="emailError"></span>
+            <p></p>          
+            <label for="message">お問い合わせ内容</label>
+            <p></p>
+            <textarea id="message" rows="7"></textarea>
+            <p>※必須項目は必ずご入力ください</p>          
+            <button class="btn contact-submit" type="submit">送信</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

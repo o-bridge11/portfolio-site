@@ -1,0 +1,25 @@
+/* スマホサイズ */
+@media (max-width: 768px) {
+    .face{
+        max-width: 100%;
+    }
+    .history-wrapper{
+        height: auto;
+    }
+    .flex {
+        flex-direction: column; /* 縦並びに変更 */
+        height: auto; /* 縦並びでは高さを自動調整 */
+        gap: 5px; /* 必要に応じて隙間を調整 */
+    }
+    .skillset{
+        padding-bottom: 300px;
+    }
+    .box {
+        flex: none; /* フレックスプロパティを無効化 */
+        width: 100%; /* コンテナ幅に合わせる */
+    }
+    img {
+        max-width: 100%; /* 親要素の幅にフィット */
+        height: auto; /* 縦横比を維持 */
+    }
+}
