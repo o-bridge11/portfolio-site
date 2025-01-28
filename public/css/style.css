@@ -1,0 +1,244 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    width: 100%;
+  }  
+  * {
+    box-sizing: border-box;
+  }  
+  body {
+    font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+  }  
+  li {
+    list-style: none;
+  }    
+  a {
+    text-decoration: none;
+  }  
+  .header {
+    background-color: rgba( 34, 49, 52);
+    width: 100%;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+  }  
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }  
+  .header-right {
+    float: right;
+    color:darkgray;
+    background-color: cadetblue;
+    padding: 0 20px;
+  }  
+  .button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .project {
+    opacity: 0; /* 初期状態: 非表示 */
+    transform: translateX(100%); /* 右からスライドイン */
+    transition: all 0.5s ease-in-out;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  .project.show {
+    opacity: 1; /* 表示状態 */
+    transform: translateX(0); /* 元の位置 */
+  }  
+  .top-wrapper {
+    margin-top: 60px;
+    background-image: url("../images/IMG_6610.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 400px;
+    color:aquamarine; 
+  }
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+  }  
+  .top-wrapper .container {
+    text-align: center;  
+  }  
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }    
+  .top-wrapper h1 {
+    padding: 80px 0 10px 0;
+  }  
+  .section-title {
+    border-bottom: 1px solid rgb(225, 225, 227);
+    padding-bottom: 10px;
+  }  
+  .face {
+    max-width: 75%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+  }
+  .Profile-contents {
+    margin: 15px 0;
+  }
+  .Profile-contents table {
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    font-family: Arial, sans-serif; 
+  }
+  .Profile-contents th,
+  .Profile-contents td {
+    border-bottom: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+  }
+  .Profile-contents th { 
+    font-weight: bold; 
+  }
+  .Profile-contents tr:last-child th,
+  .Profile-contents tr:last-child td {
+    border-bottom: none;
+  }
+  .history-wrapper {
+    background-color: rgb(251, 251, 255);
+    background-size: cover;
+    background-position: center; 
+    height: 300px;
+  }
+  /*横並びディスプレイ*/
+  .flex {
+    height: 300px;
+    display: flex;
+    gap: 10px; /* 隙間を設定 */
+  }
+  .box {
+    flex: 1; /* 同じ幅で分割 */
+    background-color: lightblue;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  /*スキル紹介*/
+  .skillset {
+    background-image: url("../images/skillset.jpg");
+    background-position: center; /* 中央に配置 */
+    background-size: cover;
+    object-fit: contain; /* 画像全体を表示し、親要素に収める */
+  }
+  /*スライダー*/
+  .slider {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .slide img {
+    width: 100%; /* 親要素の幅にフィット */
+    object-fit: contain; /* 画像全体を表示し、親要素に収める */
+    display: block;
+  }
+  .controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .sld {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: static;
+  }
+  /*SNSリンク*/
+  .btn-wrapper {
+    background-color: rgb(251, 251, 255);
+    text-align: center;
+    margin-top: 10px;
+  }
+  .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  .btn:hover {
+    opacity: 1;
+  }
+  .instagram {
+    background-color: rgb(214, 10, 156);
+    margin-right: 10px;
+  }
+  .X {
+    background-color: black;
+  }
+  /*お問い合わせフォーム*/
+  .contact-form p {
+    margin: 0;
+    font-size: 12px;
+  }
+  input {
+    width: 400px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+  textarea {
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+  .contact-submit {
+    background-color: #dee7ec;
+    color: #889eab;
+    margin-bottom: 25px;
+    box-shadow: 0px 7px #93c4df;
+    border: 1px solid #dee7ec;
+  }
+  .contact-submit:active {
+    box-shadow: none;
+    position: relative;
+    top: 7px;
+  }
+  .error {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+  }
+  
